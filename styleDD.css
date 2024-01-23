@@ -1,0 +1,339 @@
+:root {
+    --main-color-header: rgb(240, 171, 44);
+    --main-color-body: rgb(255, 248, 220);
+    --main-color-footer: rgb(238, 224, 153);
+    --main-color-question: rgb(243, 203, 159);
+    --main-font-family: calibri, consolas, "comic sans ms", sans-serif;
+    --main-color-text: rgb(139, 69, 19);
+    --main-color-question-text: rgb(0, 0, 0);
+    --main-max-width-insert: 700px;
+    --main-width-insert: 100%;
+}
+
+#container_flex {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;   
+}
+.box {
+    margin: 10px 0px 20px;
+    padding: 5px;
+}
+
+header {
+    padding: 10px;
+}
+body {
+    margin: 0px;
+    font-family: var(--main-font-family);
+    background-color: var(--main-color-body);
+    color: var(--main-color-text);
+}
+
+#header {
+    background-color: var(--main-color-header);
+    margin: 10px -10px 10px;
+    padding-left: 10px;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 10px -10px 10px;
+}
+.nav {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    margin: 5px 10px 5px;
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+.margin {
+    margin: 5px 0px 5px;
+}
+
+.main_letter::first-letter {
+    font-size: 300%;
+    font-weight: bold;
+}
+
+footer {
+    background-color: var(--main-color-footer);
+    padding: 5px;
+    font-size: 70%;
+   }
+
+.table_footer {
+    max-width: 100%;
+    width: 100%;
+    padding: 1px;
+    text-align: left;
+    background-color: var(--main-color-footer);
+}
+.table_footer_td {
+    background-color: var(--main-color-footer);
+}
+
+#col1_footer, #col2_footer {
+    width: 50%;
+}
+.caption_footer {
+    text-align: left;
+    font-weight: bold;
+}
+
+.align_right {
+    text-align: right;
+}
+
+#header_main {
+    font-size: 2em;
+}
+ 
+#questionValue, #questionAction {
+    box-sizing: border-box;
+    background-color: var(--main-color-question);
+    max-width: var(--main-max-width-insert);
+    width: var(--main-width-insert);
+    color: var(--main-color-question-text);
+    padding-left: 5px;
+}
+
+img, video {
+    width: var(--main-width-insert);
+    max-width: var(--main-max-width-insert);
+}
+
+.imd_symbol {
+    max-width: 350px;
+    width: var(--main-width-insert);
+}
+
+#img_main {
+    width: 100%;
+    margin-left: -5px;
+    padding-left: 2.5px;
+}
+
+iframe {
+    width: 700px;
+    height: 393px;
+}
+
+.pic {
+    width: var(--main-width-insert);
+    max-width: var(--main-max-width-insert);
+    border: 0px;
+}
+
+.pic_1 {
+    background-color: transparent;
+    background-color: rgb(0, 0, 0);
+    width: 100px;
+    height: 100px;
+    margin-left: 65px;
+    margin-top: 0px;
+}
+
+.table {
+    max-width: var(--main-max-width-insert);
+    width: var(--main-width-insert);
+    padding: 1px;
+    text-align: center;
+    background-color: rgb(60, 51, 51);
+  }
+
+td {
+   background: whitesmoke;
+   padding: 5px;
+  }
+
+#col1, #col2 {
+    width: 50%;
+    padding: 5px;
+    background: whitesmoke;
+   }
+.marker {
+    background-color: rgba(235, 239, 111, 0.9);
+}
+
+li {
+    list-style-type: none;
+    font-weight: bold; 
+}
+
+ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+li > ul {
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+li:hover {
+    font-size: 130%;
+}
+
+ul:hover {
+    font-size: 130%;
+}
+
+li > ul:hover {
+    font-size: 80%;
+}
+   
+caption {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.text {
+    position: absolute;
+    background-color: rgba(233, 198, 198, 0.6);
+    max-width: 500px;
+    width: var(--main-width-insert);
+    font-size: 350%;
+    color: rgba(255, 0, 0, 0.2);
+    text-align: center;
+    padding: 2px;
+    margin-left: 30%;
+    margin-top: -10px;
+}
+.text_1 {
+    position: absolute;
+    width: var(--main-width-insert);
+    max-width: var(--main-max-width-insert);
+    margin-left: 5px;
+    margin-top: 100px;
+    color: rgb(163, 45, 45);
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 800%;
+}
+.text_3 {
+    font-size: 10vw;
+}
+
+.button {
+    background: none;
+    border: 0 none;
+    cursor: pointer;
+}
+.button_1 {
+    background-color: chocolate;
+    font-weight: bold;
+    border: 5px solid transparent;
+    border-radius: 50px;
+}
+.button_1:hover {
+    background-color: crimson;
+    cursor: pointer;
+}
+
+.button_2 {
+    background-color: chocolate;
+    font-weight: bold;
+    border: 5px solid transparent;
+    border-radius: 50px;
+    transition: .5s ease-in;
+}
+.button_2:hover {
+    cursor: pointer;
+    transform: translateY(-6px);
+}
+
+.button_nav{
+    display: inline-block;
+    background: rgb(201, 201, 234);
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.tag_a {
+    color: var(--main-color-text);
+    text-decoration: none;
+}
+
+.a:hover {
+    font-size: 150%;
+}
+
+#img_button {
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+}
+
+#img_pic_footer {
+    width:16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+.main_link {
+    background-color: rgb(230, 230, 250);
+    border: none;
+    padding: 15px;
+    text-align: center;
+    color: rgb(150, 32, 209);
+    border-radius: 12px;
+    position: relative;
+    width: 200px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    overflow: hidden;
+    cursor: pointer;
+}
+.main_link:after {
+    content: "";
+    background:  rgb(184, 184, 243);
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 1.5s
+}
+.main_link:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+#main_link_img {
+    opacity: 1;
+    }
+
+#main_link_img:hover {
+    opacity: 0.5;
+    }
+
+.black {
+    border: none;
+    color: #000000;
+    background-color: #000000;
+    height: 5px;
+}
+
+.p_formAction {
+    margin-top: -10px;
+    padding: 20px 0px 5px 0px;
+    background-color: var(--main-color-question);
+    max-width: var(--main-max-width-insert);
+    width: var(--main-width-insert);
+    color: var(--main-color-question-text);
+}
+
+.aside_links {
+    font-style: italic;
+}
