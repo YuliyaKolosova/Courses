@@ -1,0 +1,1796 @@
+INSERT INTO VIEW_ACTIVITY_AUTHOR
+VALUES (1, 'Писатель');
+INSERT INTO VIEW_ACTIVITY_AUTHOR
+VALUES (2, 'Художник-иллюстратор');
+INSERT INTO VIEW_ACTIVITY_AUTHOR
+VALUES (3, 'Автор');
+INSERT INTO VIEW_ACTIVITY_AUTHOR
+VALUES (4, 'Критик');
+
+
+INSERT INTO CREATION
+VALUES (1, 'Волшебник изумрудного города', NULL);
+INSERT INTO CREATION
+VALUES (2, 'Кот-рыболов', 'Сказка');
+INSERT INTO CREATION
+VALUES (3, 'Мешок яблок', 'Сказка');
+INSERT INTO CREATION
+VALUES (4, 'Разные колеса', 'Сказка'); 
+INSERT INTO CREATION
+VALUES (5, 'Про елки', 'Рассказ');
+INSERT INTO CREATION
+VALUES (6, 'Огниво', 'Сказка');
+INSERT INTO CREATION
+VALUES (7, 'Принцесса на горошине', 'Сказка');
+INSERT INTO CREATION
+VALUES (8, 'Русский язык. Азбука', NULL);
+INSERT INTO CREATION
+VALUES (9, 'Окружающий мир', NULL);
+INSERT INTO CREATION
+VALUES (10, 'Русский язык', NULL);
+INSERT INTO CREATION
+VALUES (11, 'Гроза', 'Пьеса');
+INSERT INTO CREATION
+VALUES (12, 'Луч света в темном царства', 'Критическая статья');
+INSERT INTO CREATION
+VALUES (13, 'Живая шляпа', 'Рассказ');
+INSERT INTO CREATION
+VALUES (14, 'Метрическая система. Справочник для всех', NULL);
+INSERT INTO CREATION
+VALUES (15, 'Едем, плаваем, летаем…', NULL);
+INSERT INTO CREATION
+VALUES (16, '1001 упражнение для развития логики, внимания, памяти', NULL);
+INSERT INTO CREATION
+VALUES (17, 'Урфин Джюс и его деревянные солдаты', NULL);
+INSERT INTO CREATION
+VALUES (18, 'Семь подземных королей', NULL);
+
+
+INSERT INTO VIEW_ILLUSTRATION
+VALUES (1, 'Рисунок');
+INSERT INTO VIEW_ILLUSTRATION
+VALUES (2, 'Фотография');
+INSERT INTO VIEW_ILLUSTRATION
+VALUES (3, 'Гравюра');
+INSERT INTO VIEW_ILLUSTRATION
+VALUES (4, 'Чертеж');
+
+
+INSERT INTO COLOR_ILLUSTRATION
+VALUES (1, 'Цветная');
+INSERT INTO COLOR_ILLUSTRATION
+VALUES (2, 'Черно-белая');
+
+
+INSERT INTO AGE_RESTRICTION
+VALUES (1, '0+', 'Информационная продукция для детей до 6 лет может содержать оправданные жанром эпизодические ненатуралистические изображения или описания физического или психологического насилия при условии сострадания к жертве насилия и победы добра над злом.', 0);
+INSERT INTO AGE_RESTRICTION
+VALUES (2, '6+', 'В книжной продукции для детей, достигших возраста 6 лет, допустимы ненатуралистические изображения или описания заболеваний человека, несчастных случаев, аварий, катастроф либо насильственной смерти без демонстрации их последствий.', 6);
+INSERT INTO AGE_RESTRICTION
+VALUES (3, '12+',  'В книгах для детей старше 12 лет могут присутствовать сцены насилия или убийства, описания болезней, катастроф, но без подробностей. Употребление алкоголя, табака и наркотиков может присутствовать, но должно осуждаться. Может присутствовать схематичное описание объятий и поцелуев мужчин и женщин.', 12);
+INSERT INTO AGE_RESTRICTION
+VALUES (4, '16+', 'Книги для детей старше 16 лет могут содержать сцены болезней, катастроф без подробных описаний. Насилие, употребление алкоголя и наркотиков может быть описано, но должно осуждаться. Могут присутствовать грубые слова, но не мат. Сцены сексуальных отношений не могут быть описаны с анатомическими подробностями.', 16);
+INSERT INTO AGE_RESTRICTION
+VALUES (5, '18+',  'Маркировка 18+ должна присутствовать, если в книге есть натуралистическое описание болезней, катастроф, не осуждаемое употребление наркотиков и алкоголя, натуралистические сцены половых отношений, нетрадиционные взаимоотношения, нецензурная брань.', 18);
+
+
+INSERT INTO RESTRICTION_ON_ISSUE_OF_EXEMPLAR
+VALUES (1, 'Музейные экземпляры', NULL);
+INSERT INTO RESTRICTION_ON_ISSUE_OF_EXEMPLAR
+VALUES (2, 'Документы плохой сохранности', NULL);
+INSERT INTO RESTRICTION_ON_ISSUE_OF_EXEMPLAR
+VALUES (3, 'Документы, находящиеся в переплете', NULL);
+
+
+INSERT INTO TAG
+VALUES (1, 'Сутеев');
+INSERT INTO TAG
+VALUES (2, 'Дети');
+INSERT INTO TAG
+VALUES (3, 'Школа России 2023');
+INSERT INTO TAG
+VALUES (4, 'Элли, Тотошка');
+INSERT INTO TAG
+VALUES (5, 'Кот');
+INSERT INTO TAG
+VALUES (6, 'Заяц');
+INSERT INTO TAG
+VALUES (7, 'Солдат');
+INSERT INTO TAG
+VALUES (8, 'СИ');
+
+
+INSERT INTO GENRE
+VALUES (1, 'Поэзия, проза', NULL);
+INSERT INTO GENRE
+VALUES (2, 'Детская книга', NULL);
+INSERT INTO GENRE
+VALUES (3, 'Справочная книга', NULL);
+INSERT INTO GENRE
+VALUES (4, 'Учебная книга', NULL);
+INSERT INTO GENRE
+VALUES (5, 'Хобби, досуг', NULL);
+INSERT INTO GENRE
+VALUES (6, 'Приключения', NULL);
+
+
+INSERT INTO PUBLISHING_HOUSE
+VALUES (1, 'Издательский дом Мещерякова', 'Москва', NULL, '119021, Москва, ул. Россолимо, д. 7, стр. 3', '(495) 639-93-49');
+INSERT INTO PUBLISHING_HOUSE
+VALUES (2, 'АО «Издательство «Просвещение»', 'Москва', NULL, '127473, Москва, ул. Краснопресненская, д. 16, стр. 3, этаж 4, помещение I', NULL);
+INSERT INTO PUBLISHING_HOUSE
+VALUES (3, 'ООО «Издательство АСТ»', 'Москва', NULL, '129085, Москва, Звездный бульвар, д. 21, стр. 1, комн. 705, помещение I, этаж 7', NULL);
+INSERT INTO PUBLISHING_HOUSE
+VALUES (4, 'ООО «Издательская группа «Азбука-Аттикус»', 'Москва', NULL, '119334, Москва, 5-й Донской проезд, д. 15, стр. 4', NULL);
+INSERT INTO PUBLISHING_HOUSE
+VALUES (5, 'ООО «Издательство «Астрель»', 'Москва', NULL, '129085, Москва, проезд Ольминского, д. 3а', NULL);
+INSERT INTO PUBLISHING_HOUSE
+VALUES (6, 'Научное книгоиздательство', 'Ленинград', NULL, NULL, NULL);
+
+
+INSERT INTO AUTHOR
+VALUES (1, 'Канакина', 'Валентина Павловна', NULL, 3);
+INSERT INTO AUTHOR
+VALUES (2, 'Горецкий', 'Всеслав Гаврилович', NULL, 3);
+INSERT INTO AUTHOR
+VALUES (3, 'Плешаков', 'Андрей Анатольевич', NULL, 3);
+INSERT INTO AUTHOR
+VALUES (4, 'Добролюбов', 'Николай Александрович', TO_DATE ('14.06.1891 ', 'DD.MM.YYYY'), 4);
+INSERT INTO AUTHOR
+VALUES (5, 'Кирюшкин', 'Виктор Андреевич', NULL, 3);
+INSERT INTO AUTHOR
+VALUES (6, 'Виноградская', 'Людмила Андреевна', NULL, 3);
+INSERT INTO AUTHOR
+VALUES (7, 'Бойкина', 'Марина Викторовна', NULL, 3);
+INSERT INTO AUTHOR
+VALUES (8, 'Сутеев', 'Владимир Григорьевич', TO_DATE ('05.07.1903', 'DD.MM.YYYY'), 1);
+INSERT INTO AUTHOR
+VALUES (9, 'Сутеев', 'Владимир Григорьевич', TO_DATE ('05.07.1903', 'DD.MM.YYYY'), 2);
+INSERT INTO AUTHOR
+VALUES (10, 'Андерсен', 'Ханс Кристиан', TO_DATE ('02.04.1805', 'DD.MM.YYYY'), 1);
+INSERT INTO AUTHOR
+VALUES (11, 'Волков', 'Александр Мелентьевич', TO_DATE ('14.06.1891 ', 'DD.MM.YYYY'), 1);
+INSERT INTO AUTHOR
+VALUES (12, 'Островский', 'Александр Николаевич', TO_DATE ('31.03.1823 ', 'DD.MM.YYYY'), 1);
+INSERT INTO AUTHOR
+VALUES (13, 'Носов', 'Николай Николаевич', TO_DATE ('23.11.1908', 'DD.MM.YYYY'), 1);
+INSERT INTO AUTHOR
+VALUES (14, 'Перельман', 'Яков Исидорович', NULL, 3);
+INSERT INTO AUTHOR
+VALUES (15, 'Арон', 'Карл Давыдович', NULL, 3);
+INSERT INTO AUTHOR
+VALUES (16, 'Сахаров', 'Святослав Владимирович', NULL, 3);
+INSERT INTO AUTHOR
+VALUES (17, 'Дмитриева', 'Валентина Геннадьевна', NULL, 3);
+
+
+INSERT INTO VIEW_PRINTED_MATERIAL
+VALUES (1, 'Книга', NULL);
+INSERT INTO VIEW_PRINTED_MATERIAL
+VALUES (2, 'Журнал', NULL);
+INSERT INTO VIEW_PRINTED_MATERIAL
+VALUES (3, 'Газета', NULL);
+
+
+INSERT INTO PRINTED_MATERIAL_TYPE_BY_PERIODICITY
+VALUES (1, 'Непериодическое издание', NULL);
+INSERT INTO PRINTED_MATERIAL_TYPE_BY_PERIODICITY
+VALUES (2, 'Периодическое издание', NULL);
+INSERT INTO PRINTED_MATERIAL_TYPE_BY_PERIODICITY
+VALUES (3, 'Продолжающееся', NULL);
+
+
+INSERT INTO PRINTED_MATERIAL_TYPE_BY_VOLUME
+VALUES (1, 'Книга', 'Непериодическое текстовое книжное издание объемом свыше 48 страниц');
+INSERT INTO PRINTED_MATERIAL_TYPE_BY_VOLUME
+VALUES (2, 'Брошюра', 'Непериодическое текстовое книжное издание свыше четырех , но не более 48 страниц');
+INSERT INTO PRINTED_MATERIAL_TYPE_BY_VOLUME
+VALUES (3, 'Листовка', 'Непериодическое текстовое листовое издание объемом от одной до четырех страниц');
+
+
+INSERT INTO PRINTED_MATERIAL_TYPE_BY_FORMAT_OF_INFORMATION
+VALUES (1, 'Учебник', NULL);
+INSERT INTO PRINTED_MATERIAL_TYPE_BY_FORMAT_OF_INFORMATION
+VALUES (2, 'Словарь', NULL);
+INSERT INTO PRINTED_MATERIAL_TYPE_BY_FORMAT_OF_INFORMATION
+VALUES (3, 'Энциклопедия', NULL);
+
+
+INSERT INTO PRINTED_MATERIAL_TYPE_BY_STRUCTURE
+VALUES (1, 'Серия', NULL);
+INSERT INTO PRINTED_MATERIAL_TYPE_BY_STRUCTURE
+VALUES (2, 'Однотомное издание', NULL);
+INSERT INTO PRINTED_MATERIAL_TYPE_BY_STRUCTURE
+VALUES (3, 'Многотомное издание', NULL);
+INSERT INTO PRINTED_MATERIAL_TYPE_BY_STRUCTURE
+VALUES (4, 'Собрание сочинений', NULL);
+INSERT INTO PRINTED_MATERIAL_TYPE_BY_STRUCTURE
+VALUES (5, 'Избранные произведения', NULL);
+
+
+INSERT INTO PRINTED_MATERIAL_TYPE_BY_SYMBOLIC_NATURE_OF_INFORMATION
+VALUES (1, 'Текстовые', 'Издание, большую часть объема которого занимает словесный, цифровой, иероглифический, формульный или смешанный текст ');
+INSERT INTO PRINTED_MATERIAL_TYPE_BY_SYMBOLIC_NATURE_OF_INFORMATION
+VALUES (2, 'Нотное издание', 'Издание, большую часть объема которого занимает нотная запись музыкального произведения');
+INSERT INTO PRINTED_MATERIAL_TYPE_BY_SYMBOLIC_NATURE_OF_INFORMATION
+VALUES (3, 'Изоиздание', 'Издание, большую часть объема которого занимает изображение');
+
+
+INSERT INTO PRINTED_MATERIAL_TYPE_BY_MAIN_TEXT
+VALUES (1, 'Моноиздание', NULL);
+INSERT INTO PRINTED_MATERIAL_TYPE_BY_MAIN_TEXT
+VALUES (2, 'Сборник', NULL);
+
+
+INSERT INTO PRINTED_MATERIAL_TYPE_BY_TARGET_DESTINATION
+VALUES (1, 'Официальное', NULL);
+INSERT INTO PRINTED_MATERIAL_TYPE_BY_TARGET_DESTINATION
+VALUES (2, 'Научное', NULL);
+INSERT INTO PRINTED_MATERIAL_TYPE_BY_TARGET_DESTINATION
+VALUES (3, 'Справочное', NULL);
+INSERT INTO PRINTED_MATERIAL_TYPE_BY_TARGET_DESTINATION
+VALUES (4, 'Литературно-художественное', NULL);
+INSERT INTO PRINTED_MATERIAL_TYPE_BY_TARGET_DESTINATION
+VALUES (5, 'Рекламное', NULL);
+INSERT INTO PRINTED_MATERIAL_TYPE_BY_TARGET_DESTINATION
+VALUES (6, 'Издание для досуга', NULL);
+
+
+INSERT INTO PRINTED_MATERIAL_TYPE_BY_REPEAT_RELEASE
+VALUES (1, 'Первое издание', NULL);
+INSERT INTO PRINTED_MATERIAL_TYPE_BY_REPEAT_RELEASE
+VALUES (2, 'Переиздание', 'Вновь выпущенное издание');
+INSERT INTO PRINTED_MATERIAL_TYPE_BY_REPEAT_RELEASE
+VALUES (3, 'Переработанное издание', 'Переиздание, в котором текст целиком или его значительная часть изменены по сравнению с предшествующим изданием');
+
+
+INSERT INTO PRINTED_MATERIAL_TYPE_BY_FORMAT_OF_CIRCULATION
+VALUES (1, 'Редкое издание', NULL);
+INSERT INTO PRINTED_MATERIAL_TYPE_BY_FORMAT_OF_CIRCULATION
+VALUES (2, 'Бестселлер', NULL);
+INSERT INTO PRINTED_MATERIAL_TYPE_BY_FORMAT_OF_CIRCULATION
+VALUES (3, 'Подписное', NULL);
+INSERT INTO PRINTED_MATERIAL_TYPE_BY_FORMAT_OF_CIRCULATION
+VALUES (4, 'Бесплатное', NULL);
+
+
+INSERT INTO TYPE_OF_RECEIPT_PRINTED_MATERIAL
+VALUES (1, 'Закупка', 'Приобретение у издательства, поставщика');
+INSERT INTO TYPE_OF_RECEIPT_PRINTED_MATERIAL
+VALUES (2, 'Безвозмездное получение', 'Дар от читателей, клиентов');
+INSERT INTO TYPE_OF_RECEIPT_PRINTED_MATERIAL
+VALUES (3, 'Возмещение утраты', 'Безвозмездное получение от читателей, клиентов в целях восполнения утраченного экземпляра');
+
+
+INSERT INTO TYPE_OF_DISPOSAL_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 'Списание', 'Выбытие в результате износа/порчи');
+INSERT INTO TYPE_OF_DISPOSAL_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 'Хищение', ' Совершенные с корыстной целью противоправные безвозмездное изъятие и (или) обращение чужого имущества в пользу виновного или других лиц, причинившие ущерб собственнику или иному владельцу этого имущества.');
+INSERT INTO TYPE_OF_DISPOSAL_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 'Выбытие по итогам инвентаризации', NULL);
+INSERT INTO TYPE_OF_DISPOSAL_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 'Утеря пользователем библиотеки', 'Печатный материал утерян лицом, не являющимся сотрудником библиотеки');
+
+
+INSERT INTO ISSUE_TYPE_PRINTED_MATERIAL
+VALUES (1, 'Абонемент');
+INSERT INTO ISSUE_TYPE_PRINTED_MATERIAL
+VALUES (2, 'Читальный зал');
+
+
+INSERT INTO ISSUE_REFUSAL_TYPE
+VALUES (1, 'Доступна только в читальном зале');
+INSERT INTO ISSUE_REFUSAL_TYPE
+VALUES (2, 'Выдана другому читателю в читальном зале');
+INSERT INTO ISSUE_REFUSAL_TYPE
+VALUES (3, 'Печатный материал не найден');
+
+
+INSERT INTO VIEW_VIOLATION
+VALUES (1, 'Просрочен возврат до 5 дней', 'Дата возврата печатного материала просрочена до 5 дней включительно', '-0,1');
+INSERT INTO VIEW_VIOLATION
+VALUES (2, 'Просрочен возврат более 5 дней', 'Дата возврата печатного материала просрочена более 5 дней', '-1');
+INSERT INTO VIEW_VIOLATION
+VALUES (3, 'Утеря печатного материала', NULL, '-50');
+INSERT INTO VIEW_VIOLATION
+VALUES (4, 'Порча печатного материала_10', 'Порча внешнего вида печатного материала, печатный материал не требует восстановления', '-10');
+INSERT INTO VIEW_VIOLATION
+VALUES (5, 'Порча печатного материала_30', 'Порча печатного материала, печатный материал требует восстановления (необходим переплет и т.д.)', '-30');
+
+
+INSERT INTO POSITION
+VALUES (1, 'Библиотекарь');
+INSERT INTO POSITION
+VALUES (2, 'Эксперт по формированию библиотечного фонда');
+
+
+INSERT INTO DEPARTMENT
+VALUES (1, 'Читальный зал № 1');
+INSERT INTO DEPARTMENT
+VALUES (2, 'Читальный зал № 2');
+INSERT INTO DEPARTMENT
+VALUES (3, 'Отдел хранения литературы');
+
+
+INSERT INTO WORKPLACE_ADRESS
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 'Кемеровская область – Кузбасс, г. Кемерово, ул. Дзержинского, 19');
+
+
+INSERT INTO RESTRICTION
+VALUES (1, 'Только читальный зал', 'Не выдавать печатный материал на дом');
+INSERT INTO RESTRICTION
+VALUES (2, 'Запрет на выдачу печатного материала', 'Временное ограничение на выдачу печатного материала');
+
+
+INSERT INTO VIEW_READER
+VALUES (1, 'Читательский билет', 'Лицо, получающее услуги по основной деятельности библиотеки');
+INSERT INTO VIEW_READER
+VALUES (2, 'Клиент', 'Лицо, заказывающее дополнительные услуги библиотеки (услуги офисной техники, культурно-досуговая деятельность и т.д.)');
+
+
+
+INSERT INTO LIBRARY_EMPLOYEE
+SELECT 1, 1, 1, W.ID, 'Иванова', 'Галина Сергеевна', TO_DATE ('17.05.1979', 'DD.MM.YYYY'), 'Кемеровская область – Кузбасс, г. Кемерово, ул. Дзержинского, 21-45', '+79059081001', NULL, 'Паспорт 32 00 001634 выдан Заводским РОВД г. Кемерово 18.05.2023', NULL, TO_DATE ('04.04.2020', 'DD.MM.YYYY'), '1263'
+FROM WORKPLACE_ADRESS W
+WHERE W.VALUE = 'Кемеровская область – Кузбасс, г. Кемерово, ул. Дзержинского, 19';
+
+INSERT INTO LIBRARY_EMPLOYEE
+SELECT 2, 2, 3, W.ID, 'Иванова', 'Галина Сергеевна', TO_DATE ('17.05.1979', 'DD.MM.YYYY'), 'Кемеровская область – Кузбасс, г. Кемерово, ул. Двужильного, 16-46', '+79054081002', NULL, 'Паспорт 32 10 034635 выдан Заводским РОВД г. Кемерово 19.05.2023', NULL, TO_DATE ('24.04.2018', 'DD.MM.YYYY'), '1265'
+FROM WORKPLACE_ADRESS W
+WHERE W.VALUE = 'Кемеровская область – Кузбасс, г. Кемерово, ул. Дзержинского, 19';
+
+INSERT INTO LIBRARY_EMPLOYEE
+SELECT 3, 1, 2, W.ID, 'Петрова', 'Инна Николаевна', TO_DATE ('07.07.1970', 'DD.MM.YYYY'), 'Кемеровская область – Кузбасс, г. Кемерово, ул. Дзержинского, 21-45', '+79059081101', NULL, 'Паспорт 32 00 001634 выдан Заводским РОВД г. Кемерово 01.08.2015', NULL, TO_DATE ('18.05.1989', 'DD.MM.YYYY'), '1267'
+FROM WORKPLACE_ADRESS W
+WHERE W.VALUE = 'Кемеровская область – Кузбасс, г. Кемерово, ул. Дзержинского, 19';
+
+INSERT INTO LIBRARY_EMPLOYEE
+SELECT 4, 1, 2, W.ID, 'Инченко', 'Геннадий Сергеевич', TO_DATE ('11.08.2000', 'DD.MM.YYYY'), 'Кемеровская область – Кузбасс, г. Кемерово, ул. Тухачевского, 16-15', '+79059081102', NULL, 'Паспорт 32 03 401624 выдан Заводским РОВД г. Кемерово 18.08.2018', NULL, TO_DATE ('05.09.2023', 'DD.MM.YYYY'), '1269'
+FROM WORKPLACE_ADRESS W
+WHERE W.VALUE = 'Кемеровская область – Кузбасс, г. Кемерово, ул. Дзержинского, 19';
+
+INSERT INTO LIBRARY_EMPLOYEE
+SELECT 5, 1, 1, W.ID, 'Кирина', 'Татьяна Севастьяновна', TO_DATE ('10.06.1989', 'DD.MM.YYYY'), 'Кемеровская область – Кузбасс, г. Кемерово, ул. Дзержинского, 1-5', '+79059094101', NULL, 'Паспорт 33 00 151634 выдан Заводским РОВД г. Кемерово 08.05.2018', NULL, TO_DATE ('11.07.2010', 'DD.MM.YYYY'), '1280'
+FROM WORKPLACE_ADRESS W
+WHERE W.VALUE = 'Кемеровская область – Кузбасс, г. Кемерово, ул. Дзержинского, 19';
+
+
+
+INSERT INTO READER
+VALUES (1, 1, 'Петров', 'Семен Натанович', TO_DATE ('11.06.1960', 'DD.MM.YYYY'), 'Кемеровская область – Кузбасс, г. Кемерово, ул. Дружбы, 21-45', '+79236104756', '9236104756@gmail.com', 'Паспорт 30 10 134635 выдан Заводским РОВД г. Кемерово 29.06.2005', TO_DATE ('11.06.1967', 'DD.MM.YYYY'), NULL, TO_DATE ('01.07.2005', 'DD.MM.YYYY'), 1263);
+INSERT INTO READER
+VALUES (2, 1, 'Петрова', 'Светлана Семеновна', TO_DATE ('23.06.1990', 'DD.MM.YYYY'), 'Кемеровская область – Кузбасс, г. Кемерово, ул. Барнаульская, 16-1', '+79236104253', '9236104253@gmail.com', 'Паспорт 32 10 134535 выдан Заводским РОВД г. Кемерово 30.05.2015', TO_DATE ('20.06.2009', 'DD.MM.YYYY'), NULL, TO_DATE ('17.07.2015', 'DD.MM.YYYY'), 120363);
+INSERT INTO READER
+VALUES (3, 1, 'Смирнова', 'Светлана Сергеевна', TO_DATE ('23.08.1991', 'DD.MM.YYYY'), 'Кемеровская область – Кузбасс, г. Кемерово, ул. Базовая, 18-1', '+79236104222', '9236104222@gmail.com', 'Паспорт 32 11 134735 выдан Заводским РОВД г. Кемерово 20.09.2011', TO_DATE ('20.06.2010', 'DD.MM.YYYY'), NULL, TO_DATE ('17.07.2020', 'DD.MM.YYYY'), 120663);
+INSERT INTO READER
+VALUES (4, 1, 'Смирнова', 'Татьяна Сергеевна', TO_DATE ('23.08.1991', 'DD.MM.YYYY'), 'Кемеровская область – Кузбасс, г. Кемерово, ул. Базовая, 18-2', '+79236104223', '9236104223@gmail.com', 'Паспорт 32 11 134736 выдан Заводским РОВД г. Кемерово 20.09.2011', TO_DATE ('20.06.2010', 'DD.MM.YYYY'), NULL, NULL, 120664);
+INSERT INTO READER
+VALUES (5, 1, 'Смирнов', 'Олег Петрович', TO_DATE ('20.08.1999', 'DD.MM.YYYY'), 'Кемеровская область – Кузбасс, г. Кемерово, ул. Мичурина, 10-7', '+79236122223', '79236122223@mail.ru', 'Паспорт 32 10 134936 выдан Заводским РОВД г. Кемерово 21.08.2013', TO_DATE ('20.10.2020', 'DD.MM.YYYY'), NULL, NULL, 127672);
+INSERT INTO READER
+VALUES (6, 1, 'Такиров', 'Станислав Петрович', TO_DATE ('21.10.1999', 'DD.MM.YYYY'), 'Кемеровская область – Кузбасс, г. Кемерово, ул. Мичурина, 11-17', '+79236124013', '9236124013@mail.ru', 'Паспорт 32 10 134106 выдан Заводским РОВД г. Кемерово 23.10.2013', TO_DATE ('20.10.2020', 'DD.MM.YYYY'), NULL, NULL, 127673);
+INSERT INTO READER
+VALUES (7, 1, 'Астахова', 'Станислава Игоревна', TO_DATE ('12.10.2010', 'DD.MM.YYYY'), 'Кемеровская область – Кузбасс, г. Кемерово, ул. Муромцева, 12', '+79236104013', '9236104013@mail.ru', 'Свидетельство о рождении II-ЛО 546 121 выдано Центральным ЗАГСом г. Кемерово 22.10.2010', TO_DATE ('20.10.2023', 'DD.MM.YYYY'), NULL, NULL, 120883);
+INSERT INTO READER
+VALUES (8, 1, 'Астапа', 'Игорь Игоревич', TO_DATE ('12.10.1950', 'DD.MM.YYYY'), 'Кемеровская область – Кузбасс, г. Кемерово, ул. Дзержинского, 10-15', '+79236108001', '9236108001@mail.ru', 'Паспорт 32 00 130006 выдан Заводским РОВД г. Кемерово 14.10.2000', TO_DATE ('20.11.1966', 'DD.MM.YYYY'), NULL , TO_DATE ('20.01.2023', 'DD.MM.YYYY'), 1146);
+INSERT INTO READER
+VALUES (9, 1, 'Петров', 'Лев Натанович', TO_DATE ('02.10.2009', 'DD.MM.YYYY'), 'Кемеровская область – Кузбасс, г. Кемерово, ул. Базовая, 10-1', '+79056105113', '9056105113@gmail.com', 'Свидетельство о рождении II-ЛО 544 170 выдано Центральным ЗАГСом г. Кемерово 08.10.2009', TO_DATE ('21.09.2017', 'DD.MM.YYYY'), NULL, TO_DATE ('21.05.2023', 'DD.MM.YYYY'), 126113);
+INSERT INTO READER
+VALUES (10, 1, 'Лень', 'Галина Викторовна', TO_DATE ('02.10.2013', 'DD.MM.YYYY'), 'Кемеровская область – Кузбасс, г. Кемерово, ул. Базовая, 14-11', '+79056105413', '9056105413@gmail.com', 'Свидетельство о рождении II-ЛО 549 770 выдано Центральным ЗАГСом г. Кемерово 08.10.2013', TO_DATE ('21.09.2021', 'DD.MM.YYYY'), NULL, NULL, 128990);
+
+
+INSERT INTO RATING_PRINTED_MATERIAL
+VALUES (1, 1, 'Не понравилось');
+INSERT INTO RATING_PRINTED_MATERIAL
+VALUES (2, 2, 'Эмоций не вызвало');
+INSERT INTO RATING_PRINTED_MATERIAL
+VALUES (3, 3, 'Понравилось, но рекомендовать не буду');
+INSERT INTO RATING_PRINTED_MATERIAL
+VALUES (4, 4, 'Понравилось, рекомендую к прочтению');
+INSERT INTO RATING_PRINTED_MATERIAL
+VALUES (5, 5, 'Восторг, буду перечитывать');
+
+
+INSERT INTO RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (1, 'Книга, Издательства АСТ, 2022, Волков А.М., "Волшебник изумрудного города"', TO_DATE ('01.02.2022', 'DD.MM.YYYY'), 1, 3, NULL, 1, 300.5);
+INSERT INTO RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (2, 'Книга, Издательства АСТ, 2001, Сутеев В.., "Сказка В. Сутеева"', TO_DATE ('10.02.2022', 'DD.MM.YYYY'), 1, 3, NULL, 1, 320);
+INSERT INTO RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (3, 'Книга, Издательский дом Мещерякова, 2001, Сутеев В.., "Сказка В. Сутеева"', TO_DATE ('10.03.2022', 'DD.MM.YYYY'), 1, 3, NULL, 2, 400);
+INSERT INTO RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (4, 'Книга, Просвящение, 2001, Сутеев В.., "Сказка В. Сутеева"', TO_DATE ('10.03.2022', 'DD.MM.YYYY'), 1, 2, NULL, 1, 320);
+INSERT INTO RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (5, 'Книга, Издательство Азбука-Аттикус, 2001, Сутеев В.., "Сказка В. Сутеева"', TO_DATE ('15.03.2022', 'DD.MM.YYYY'), 1, 4, NULL, 1, 310);
+INSERT INTO RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (6, 'Книга, Издательства АСТ, 2001, Сутеев В.., "Сказка В. Сутеева"', TO_DATE ('15.03.2022', 'DD.MM.YYYY'), 1, 1, NULL, 1, 220);
+INSERT INTO RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (7, 'Книга, Издательство Астрель, 2001, Сутеев В.., "Сказка В. Сутеева"', TO_DATE ('20.03.2022', 'DD.MM.YYYY'), 1, 5, NULL, 1, 320);
+INSERT INTO RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (8, 'Книга, Перельман, 1924, "Метрическая система. Справочник для всех"', TO_DATE ('25.05.2023', 'DD.MM.YYYY'), 2, 6, 8, 1, NULL);
+INSERT INTO RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (9, 'Книга, Андерсен', TO_DATE ('01.06.2023', 'DD.MM.YYYY'), 3, 2, 7, 1, NULL);
+INSERT INTO RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (10, 'Учебники, Просвящение, 2023', TO_DATE ('06.07.2023', 'DD.MM.YYYY'), 1, 2, NULL, 12, 1200);
+INSERT INTO RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (11, 'Книга, Просвящение, 1993', TO_DATE ('01.03.1993', 'DD.MM.YYYY'), 1, 3, NULL, 4, 350);
+INSERT INTO RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (12, 'Книга, "Гроза", Просвящение, 2020', TO_DATE ('01.03.2020', 'DD.MM.YYYY'), 1, 2, NULL, 1, 400);
+INSERT INTO RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (13, 'Книга, Издательский дом Мещеряков, 2022, Волков А.М., "Волшебник изумрудного города"', TO_DATE ('11.02.2022', 'DD.MM.YYYY'), 1, 1, NULL, 1, 400);
+INSERT INTO RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (14, 'Книга, Просвещение, 2022, Волков А.М., "Волшебник изумрудного города"', TO_DATE ('11.02.2022', 'DD.MM.YYYY'), 1, 2, NULL, 1, 450);
+INSERT INTO RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (15, 'Книга, Азбука-Аттикус, 2022, Волков А.М., "Волшебник изумрудного города"', TO_DATE ('13.02.2022', 'DD.MM.YYYY'), 1, 4, NULL, 1, 500);
+INSERT INTO RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (16, 'Книга, Астрель, 2020, Дмитриева В.Г., "1001 упражнение для развития логики, внимания, памяти"', TO_DATE ('11.02.2020', 'DD.MM.YYYY'), 1, 5, NULL, 1, 200);
+INSERT INTO RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (17, 'Книга сборник рассказов, Астрель, 2020', TO_DATE ('11.02.2020', 'DD.MM.YYYY'), 1, 5, NULL, 1, 600);
+INSERT INTO RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (18, 'Книга, Носов', TO_DATE ('01.06.2023', 'DD.MM.YYYY'), 3, 3, 7, 1, NULL);
+INSERT INTO RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (19, 'Книга, Издательства АСТ, 2022, Волков А.М., "Семь подземных королей"', TO_DATE ('12.02.2022', 'DD.MM.YYYY'), 2, 3, 4, 1, NULL);
+INSERT INTO RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (20, 'Книга, Издательства АСТ, 2022, Волков А.М., "Урфин Джус..."', TO_DATE ('12.02.2022', 'DD.MM.YYYY'), 2, 3, 4, 1, NULL);
+INSERT INTO RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (21, 'Книга, Сборник, Издательства АСТ, 2022, Волков А.М., "Волшебник изумруд...","Урфин Джус...", "Семь подземных..."', TO_DATE ('12.02.2022', 'DD.MM.YYYY'), 1, 3, NULL, 1, 600);
+
+
+INSERT INTO PRINTED_MATERIAL
+VALUES (1, 1, TO_DATE ('06.01.2022', 'DD.MM.YYYY'), NULL, NULL, NULL, '2.45-К', 35000, 1, 1, NULL, NULL, 1, 1, 4, 2, 2, 2, NULL, 'Волшебник изумрудного города');
+INSERT INTO PRINTED_MATERIAL
+VALUES (2, 1, TO_DATE ('06.01.2001', 'DD.MM.YYYY'), NULL, NULL, NULL, '2.46-К', 25000, 1, 1, NULL, 5, 1, 2, 4, 2, NULL, 1, NULL, 'Сказки В. Сутеева');
+INSERT INTO PRINTED_MATERIAL
+VALUES (3, 1, TO_DATE ('06.01.2001', 'DD.MM.YYYY'), NULL, NULL, NULL, '2.47-К', 15000, 1, 1, NULL, 5, 1, 2, 4, 2, NULL, 2, NULL, 'Сказки Андерсена Х.К.');
+INSERT INTO PRINTED_MATERIAL
+VALUES (4, 1, TO_DATE ('06.01.2023', 'DD.MM.YYYY'), 1, 1, NULL, '2.48-К', 100000, 1, 1, 1, 2, 1, 1, 1, 3, NULL, 2, NULL, 'Русский язык. Азбука 1 класс');
+INSERT INTO PRINTED_MATERIAL
+VALUES (5, 1, TO_DATE ('06.01.2023', 'DD.MM.YYYY'), 1, 2, NULL, '2.49-К', 100000, 1, 1, 1, 2, 1, 1, 1, 3, NULL, 2, NULL, 'Русский язык. Азбука 1 класс');
+INSERT INTO PRINTED_MATERIAL
+VALUES (6, 1, TO_DATE ('06.01.2023', 'DD.MM.YYYY'), 1, 1, NULL, '2.50-К', 100000, 1, 1, 1, 2, 1, 1, 1, 3, NULL, 2, NULL, 'Окружающий мир 1 класс');
+INSERT INTO PRINTED_MATERIAL
+VALUES (7, 1, TO_DATE ('06.01.2023', 'DD.MM.YYYY'), 1, 2, NULL, '2.51-К', 100000, 1, 1, 1, 2, 1, 1, 1, 3, NULL, 2, NULL, 'Окружающий мир 1 класс');
+INSERT INTO PRINTED_MATERIAL
+VALUES (8, 1, TO_DATE ('06.01.2023', 'DD.MM.YYYY'), 1, 1, NULL, '2.52-К', 100000, 1, 1, 1, 2, 1, 1, 1, 3, NULL, 2, NULL, 'Русский язык 1 класс');
+INSERT INTO PRINTED_MATERIAL
+VALUES (9, 1, TO_DATE ('06.01.2023', 'DD.MM.YYYY'), 1, 2, NULL, '2.53-К', 100000, 1, 1, 1, 2, 1, 1, 1, 3, NULL, 2, NULL, 'Русский язык 1 класс');
+INSERT INTO PRINTED_MATERIAL
+VALUES (10, 1, TO_DATE ('11.01.2020', 'DD.MM.YYYY'), NULL, NULL, NULL, '2.54-К', 12000, 1, 1, NULL, NULL, 1, 1, 4, 2, NULL, 4, NULL, 'Пьеса. Островский А.Н.');
+INSERT INTO PRINTED_MATERIAL
+VALUES (11, 1, TO_DATE ('11.01.2023', 'DD.MM.YYYY'), NULL, NULL, NULL, '2.55-К', 18000, 1, 2, NULL, NULL, 1, 1, 4, 2, NULL, 1, NULL, 'Живая шляпа');
+INSERT INTO PRINTED_MATERIAL
+VALUES (12, 1, TO_DATE ('10.02.1924', 'DD.MM.YYYY'), NULL, NULL, NULL, '2.56-К', 1000, 1, 1, NULL, NULL, 1, 1, 3, 2, NULL, 1, 2, 'Метрическая система. Справочник для всех');
+INSERT INTO PRINTED_MATERIAL
+VALUES (13, 1, TO_DATE ('04.05.1993', 'DD.MM.YYYY'), NULL, NULL, NULL, '2.57-К', 14000, 1, 1, 3, NULL, 1, 1, NULL, 2, NULL, 1, NULL, 'Едем, плаваем, летаем…');
+INSERT INTO PRINTED_MATERIAL
+VALUES (14, 1, TO_DATE ('06.01.2020', 'DD.MM.YYYY'), NULL, NULL, NULL, '2.58-К', 31000, 1, 1, NULL, NULL, 3, 1, 6, 2, NULL, 1, NULL, '1001 упражнение для развития логики, внимания, памяти');
+INSERT INTO PRINTED_MATERIAL
+VALUES (15, 1, TO_DATE ('06.01.2022', 'DD.MM.YYYY'), NULL, NULL, NULL, '2.59-К', 35000, 1, 1, NULL, NULL, 1, 1, 4, 2, 2, 2, NULL, 'Урфин Джюс и его деревянные солдаты');
+INSERT INTO PRINTED_MATERIAL
+VALUES (16, 1, TO_DATE ('08.01.2022', 'DD.MM.YYYY'), NULL, NULL, NULL, '2.60-К', 35000, 1, 1, NULL, NULL, 1, 1, 4, 2, 2, 2, NULL, 'Семь подземных королей');
+INSERT INTO PRINTED_MATERIAL
+VALUES (17, 1, TO_DATE ('18.01.2022', 'DD.MM.YYYY'), NULL, NULL, NULL, '2.61-К', 15000, 1, 1, NULL, 5, 1, 2, 4, 2, 2, 2, NULL, 'Избранные сочинения. А. Волков');
+INSERT INTO PRINTED_MATERIAL
+VALUES (18, 1, TO_DATE ('01.02.2001', 'DD.MM.YYYY'), NULL, NULL, NULL, '2.62-К', 15000, 1, 1, NULL, 5, 1, 2, 4, 2, NULL, 1, NULL, 'Сказки В. Сутеева');
+INSERT INTO PRINTED_MATERIAL
+VALUES (19, 1, TO_DATE ('10.02.2001', 'DD.MM.YYYY'), NULL, NULL, NULL, '2.63-К', 10000, 1, 1, NULL, 5, 1, 2, 4, 2, NULL, 1, NULL, 'Рассказы для детей');
+INSERT INTO PRINTED_MATERIAL
+VALUES (20, 1, TO_DATE ('10.01.2001', 'DD.MM.YYYY'), NULL, NULL, NULL, '2.64-К', 11000, 1, 1, NULL, 5, 1, 2, 4, 2, NULL, 1, NULL, 'Сказки В. Сутеева');
+INSERT INTO PRINTED_MATERIAL
+VALUES (21, 1, TO_DATE ('14.02.2001', 'DD.MM.YYYY'), NULL, NULL, NULL, '2.65-К', 11000, 1, 1, NULL, 5, 1, 2, 4, 2, NULL, 1, NULL, 'Сказки В. Сутеева');
+INSERT INTO PRINTED_MATERIAL
+VALUES (22, 1, TO_DATE ('10.02.2001', 'DD.MM.YYYY'), NULL, NULL, NULL, '2.66-К', 14000, 1, 1, NULL, 5, 1, 2, 4, 2, NULL, 1, NULL, 'Сказки В. Сутеева');
+INSERT INTO PRINTED_MATERIAL
+VALUES (23, 1, TO_DATE ('11.02.2001', 'DD.MM.YYYY'), NULL, NULL, NULL, '2.67-К', 15000, 1, 1, NULL, 5, 1, 2, 4, 2, NULL, 1, NULL, 'Сказки В. Сутеева');
+INSERT INTO PRINTED_MATERIAL
+VALUES (24, 1, TO_DATE ('28.01.2001', 'DD.MM.YYYY'), NULL, NULL, NULL, '2.68-К', 9000, 1, 1, NULL, 5, 1, 2, 4, 2, NULL, 1, NULL, 'Сказки В. Сутеева');
+INSERT INTO PRINTED_MATERIAL
+VALUES (25, 1, TO_DATE ('06.01.2022', 'DD.MM.YYYY'), NULL, NULL, NULL, '2.69-К', 12000, 1, 1, NULL, NULL, 1, 1, 4, 2, 2, 2, NULL, 'Волшебник изумрудного города');
+INSERT INTO PRINTED_MATERIAL
+VALUES (26, 1, TO_DATE ('14.01.2022', 'DD.MM.YYYY'), NULL, NULL, NULL, '2.70-К', 12000, 1, 1, NULL, NULL, 1, 1, 4, 2, 2, 2, NULL, 'Волшебник изумрудного города');
+INSERT INTO PRINTED_MATERIAL
+VALUES (27, 1, TO_DATE ('16.01.2022', 'DD.MM.YYYY'), NULL, NULL, NULL, '2.71-К', 7000, 1, 1, NULL, NULL, 1, 1, 4, 2, 2, 2, NULL, 'Волшебник изумрудного города');
+INSERT INTO PRINTED_MATERIAL
+VALUES (28, 1, TO_DATE ('06.01.2023', 'DD.MM.YYYY'), 1, 1, NULL, '2.72-К', 100000, 1, 1, 1, 2, 1, 1, 1, 3, NULL, 2, NULL, 'Русский язык. Азбука 1 класс');
+INSERT INTO PRINTED_MATERIAL
+VALUES (29, 1, TO_DATE ('06.01.2023', 'DD.MM.YYYY'), 1, 2, NULL, '2.73-К', 100000, 1, 1, 1, 2, 1, 1, 1, 3, NULL, 2, NULL, 'Русский язык. Азбука 1 класс');
+INSERT INTO PRINTED_MATERIAL
+VALUES (30, 1, TO_DATE ('06.01.2023', 'DD.MM.YYYY'), 1, 1, NULL, '2.74-К', 100000, 1, 1, 1, 2, 1, 1, 1, 3, NULL, 2, NULL, 'Окружающий мир 1 класс');
+INSERT INTO PRINTED_MATERIAL
+VALUES (31, 1, TO_DATE ('06.01.2023', 'DD.MM.YYYY'), 1, 2, NULL, '2.75-К', 100000, 1, 1, 1, 2, 1, 1, 1, 3, NULL, 2, NULL, 'Окружающий мир 1 класс');
+INSERT INTO PRINTED_MATERIAL
+VALUES (32, 1, TO_DATE ('06.01.2023', 'DD.MM.YYYY'), 1, 1, NULL, '2.76-К', 100000, 1, 1, 1, 2, 1, 1, 1, 3, NULL, 2, NULL, 'Русский язык 1 класс');
+INSERT INTO PRINTED_MATERIAL
+VALUES (33, 1, TO_DATE ('06.01.2023', 'DD.MM.YYYY'), 1, 2, NULL, '2.77-К', 100000, 1, 1, 1, 2, 1, 1, 1, 3, NULL, 2, NULL, 'Русский язык 1 класс');
+INSERT INTO PRINTED_MATERIAL
+VALUES (34, 1, TO_DATE ('04.05.1993', 'DD.MM.YYYY'), NULL, NULL, NULL, '2.78-К', 14000, 1, 1, 3, NULL, 1, 1, NULL, 2, NULL, 1, NULL, 'Едем, плаваем, летаем…');
+INSERT INTO PRINTED_MATERIAL
+VALUES (35, 1, TO_DATE ('04.05.1993', 'DD.MM.YYYY'), NULL, NULL, NULL, '2.79-К', 14000, 1, 1, 3, NULL, 1, 1, NULL, 2, NULL, 1, NULL, 'Едем, плаваем, летаем…');
+INSERT INTO PRINTED_MATERIAL
+VALUES (36, 1, TO_DATE ('04.05.1993', 'DD.MM.YYYY'), NULL, NULL, NULL, '2.80-К', 14000, 1, 1, 3, NULL, 1, 1, NULL, 2, NULL, 1, NULL, 'Едем, плаваем, летаем…');
+
+
+INSERT INTO OBJECT_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES(SEQUENCE_TAB_PM.NEXTVAL, 1, 1);
+INSERT INTO OBJECT_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES(SEQUENCE_TAB_PM.NEXTVAL, 2, 2);
+INSERT INTO OBJECT_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES(SEQUENCE_TAB_PM.NEXTVAL, 3, 18);
+INSERT INTO OBJECT_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES(SEQUENCE_TAB_PM.NEXTVAL, 3, 20);
+INSERT INTO OBJECT_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES(SEQUENCE_TAB_PM.NEXTVAL, 4, 21);
+INSERT INTO OBJECT_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES(SEQUENCE_TAB_PM.NEXTVAL, 5, 22);
+INSERT INTO OBJECT_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES(SEQUENCE_TAB_PM.NEXTVAL, 6, 23);
+INSERT INTO OBJECT_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES(SEQUENCE_TAB_PM.NEXTVAL, 7, 24);
+INSERT INTO OBJECT_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES(SEQUENCE_TAB_PM.NEXTVAL, 8, 12);
+INSERT INTO OBJECT_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES(SEQUENCE_TAB_PM.NEXTVAL, 9, 3);
+INSERT INTO OBJECT_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES(SEQUENCE_TAB_PM.NEXTVAL, 10, 4);
+INSERT INTO OBJECT_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES(SEQUENCE_TAB_PM.NEXTVAL, 10, 5);
+INSERT INTO OBJECT_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES(SEQUENCE_TAB_PM.NEXTVAL, 10, 6);
+INSERT INTO OBJECT_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES(SEQUENCE_TAB_PM.NEXTVAL, 10, 7);
+INSERT INTO OBJECT_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES(SEQUENCE_TAB_PM.NEXTVAL, 10, 8);
+INSERT INTO OBJECT_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES(SEQUENCE_TAB_PM.NEXTVAL, 10, 9);
+INSERT INTO OBJECT_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES(SEQUENCE_TAB_PM.NEXTVAL, 10, 28);
+INSERT INTO OBJECT_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES(SEQUENCE_TAB_PM.NEXTVAL, 10, 29);
+INSERT INTO OBJECT_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES(SEQUENCE_TAB_PM.NEXTVAL, 10, 30);
+INSERT INTO OBJECT_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES(SEQUENCE_TAB_PM.NEXTVAL, 10, 31);
+INSERT INTO OBJECT_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES(SEQUENCE_TAB_PM.NEXTVAL, 10, 32);
+INSERT INTO OBJECT_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES(SEQUENCE_TAB_PM.NEXTVAL, 10, 33);
+INSERT INTO OBJECT_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES(SEQUENCE_TAB_PM.NEXTVAL, 11, 13);
+INSERT INTO OBJECT_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES(SEQUENCE_TAB_PM.NEXTVAL, 11, 34);
+INSERT INTO OBJECT_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES(SEQUENCE_TAB_PM.NEXTVAL, 11, 35);
+INSERT INTO OBJECT_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES(SEQUENCE_TAB_PM.NEXTVAL, 11, 36);
+INSERT INTO OBJECT_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES(SEQUENCE_TAB_PM.NEXTVAL, 12, 10);
+INSERT INTO OBJECT_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES(SEQUENCE_TAB_PM.NEXTVAL, 13, 25);
+INSERT INTO OBJECT_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES(SEQUENCE_TAB_PM.NEXTVAL, 14, 26);
+INSERT INTO OBJECT_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES(SEQUENCE_TAB_PM.NEXTVAL, 15, 27);
+INSERT INTO OBJECT_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES(SEQUENCE_TAB_PM.NEXTVAL, 16, 14);
+INSERT INTO OBJECT_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES(SEQUENCE_TAB_PM.NEXTVAL, 17, 19);
+INSERT INTO OBJECT_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES(SEQUENCE_TAB_PM.NEXTVAL, 18, 11);
+INSERT INTO OBJECT_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES(SEQUENCE_TAB_PM.NEXTVAL, 19, 16);
+INSERT INTO OBJECT_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES(SEQUENCE_TAB_PM.NEXTVAL, 20, 15);
+INSERT INTO OBJECT_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES(SEQUENCE_TAB_PM.NEXTVAL, 21, 17);
+
+
+INSERT INTO REPOSITORY_PRINTED_MATERIAL
+VALUES (1, 1);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL
+VALUES (2, 2);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL
+VALUES (3, 3);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL
+VALUES (4, 4);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL
+VALUES (5, 5);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL
+VALUES (6, 6);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL
+VALUES (7, 7);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL
+VALUES (8, 8);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL
+VALUES (9, 9);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL
+VALUES (10, 10);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL
+VALUES (11, 11);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL
+VALUES (12, 12);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL
+VALUES (13, 13);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL
+VALUES (14, 14);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL
+VALUES (15, 15);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL
+VALUES (16, 16);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL
+VALUES (17, 17);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL
+VALUES (18, 18);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL
+VALUES (19, 19);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL
+VALUES (20, 20);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL
+VALUES (21, 21);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL
+VALUES (22, 22);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL
+VALUES (23, 23);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL
+VALUES (24, 24);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL
+VALUES (25, 25);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL
+VALUES (26, 26);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL
+VALUES (27, 27);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL
+VALUES (28, 28);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL
+VALUES (29, 29);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL
+VALUES (30, 30);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL
+VALUES (31, 31);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL
+VALUES (32, 32);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL
+VALUES (33, 33);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL
+VALUES (34, 34);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL
+VALUES (35, 35);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL
+VALUES (36, 36);
+
+
+INSERT INTO CREATION_AUTHOR
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 11);
+INSERT INTO CREATION_AUTHOR
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 8);
+INSERT INTO CREATION_AUTHOR
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 9);
+INSERT INTO CREATION_AUTHOR
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 8);
+INSERT INTO CREATION_AUTHOR
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 9);
+INSERT INTO CREATION_AUTHOR
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 4, 8);
+INSERT INTO CREATION_AUTHOR
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 4, 9);
+INSERT INTO CREATION_AUTHOR
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 5, 8);
+INSERT INTO CREATION_AUTHOR
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 5, 9);
+INSERT INTO CREATION_AUTHOR
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 6, 10);
+INSERT INTO CREATION_AUTHOR
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 7, 10);
+INSERT INTO CREATION_AUTHOR
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 10, 1);
+INSERT INTO CREATION_AUTHOR
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 10, 2);
+INSERT INTO CREATION_AUTHOR
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 8, 2);
+INSERT INTO CREATION_AUTHOR
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 8, 5);
+INSERT INTO CREATION_AUTHOR
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 8, 6);
+INSERT INTO CREATION_AUTHOR
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 8, 7);
+INSERT INTO CREATION_AUTHOR
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 9, 3);
+INSERT INTO CREATION_AUTHOR
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 11, 12);
+INSERT INTO CREATION_AUTHOR
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 12, 4);
+INSERT INTO CREATION_AUTHOR
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 13, 13);
+INSERT INTO CREATION_AUTHOR
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 14, 14);
+INSERT INTO CREATION_AUTHOR
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 15, 15);
+INSERT INTO CREATION_AUTHOR
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 15, 16);
+INSERT INTO CREATION_AUTHOR
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 16, 17);
+INSERT INTO CREATION_AUTHOR
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 17, 11);
+INSERT INTO CREATION_AUTHOR
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 18, 11);
+
+
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 1);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 2);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 2);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 4, 2);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 5, 2);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 6, 3);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 7, 3);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 8, 4);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 8, 5);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 9, 6);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 9, 7);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 10, 8);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 10, 9);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 11, 10);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 12, 10);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 13, 11);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 14, 12);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 15, 13);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 16, 14);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 17, 15);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 18, 16);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 17, 17);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 18, 17);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 17);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 18);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 18);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 4, 18);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 5, 18);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 6, 19);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 19);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 13, 19);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 20);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 20);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 4, 20);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 5, 20);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 21);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 21);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 4, 21);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 5, 21);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 22);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 22);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 4, 22);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 5, 22);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 23);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 23);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 4, 23);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 5, 23);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 24);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 24);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 4, 24);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 5, 24);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 25);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 26);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 27);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 8, 28);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 8, 29);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 9, 30);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 9, 31);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 10, 32);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 10, 33);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 15, 34);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 15, 35);
+INSERT INTO CREATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 15, 36);
+
+
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 11, 1);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 8, 2);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 9, 2);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 10, 3);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 4);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 5, 4);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 6, 4);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 7, 4);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 5);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 5, 5);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 6, 5);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 7, 5);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 6);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 7);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 8);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 8);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 9);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 9);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 12, 10);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 4, 10);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 13, 11);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 14, 12);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 15, 13);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 16, 13);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 17, 14);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 11, 15);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 11, 16);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 11, 17);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 8, 18);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 9, 18);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 10, 19);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 8, 19);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 13, 19);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 8, 20);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 9, 20);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 8, 21);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 9, 21);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 8, 22);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 9, 22);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 8, 23);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 9, 23);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 8, 24);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 9, 24);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 11, 25);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 11, 26);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 11, 27);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 28);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 5, 28);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 6, 28);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 7, 28);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 29);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 5, 29);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 6, 29);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 7, 29);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 30);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 31);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 32);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 32);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 33);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 33);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 15, 34);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 16, 34);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 15, 35);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 16, 35);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 15, 36);
+INSERT INTO AUTHOR_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 16, 36);
+
+
+INSERT INTO COLOR_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 1);
+INSERT INTO COLOR_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 2);
+INSERT INTO COLOR_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 3);
+INSERT INTO COLOR_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 4);
+INSERT INTO COLOR_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 5);
+INSERT INTO COLOR_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 6);
+INSERT INTO COLOR_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 7);
+INSERT INTO COLOR_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 8);
+INSERT INTO COLOR_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 9);
+INSERT INTO COLOR_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 11);
+INSERT INTO COLOR_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 13);
+INSERT INTO COLOR_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 14);
+INSERT INTO COLOR_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 15);
+INSERT INTO COLOR_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 16);
+INSERT INTO COLOR_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 17);
+INSERT INTO COLOR_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 18);
+INSERT INTO COLOR_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 19);
+INSERT INTO COLOR_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 20);
+INSERT INTO COLOR_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 21);
+INSERT INTO COLOR_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 22);
+INSERT INTO COLOR_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 23);
+INSERT INTO COLOR_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 24);
+INSERT INTO COLOR_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 25);
+INSERT INTO COLOR_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 26);
+INSERT INTO COLOR_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 27);
+INSERT INTO COLOR_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 28);
+INSERT INTO COLOR_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 29);
+INSERT INTO COLOR_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 30);
+INSERT INTO COLOR_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 31);
+INSERT INTO COLOR_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 32);
+INSERT INTO COLOR_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 33);
+INSERT INTO COLOR_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 34);
+INSERT INTO COLOR_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 35);
+INSERT INTO COLOR_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 36);
+
+
+INSERT INTO VIEW_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 1);
+INSERT INTO VIEW_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 2);
+INSERT INTO VIEW_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 3);
+INSERT INTO VIEW_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 4);
+INSERT INTO VIEW_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 5);
+INSERT INTO VIEW_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 6);
+INSERT INTO VIEW_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 7);
+INSERT INTO VIEW_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 8);
+INSERT INTO VIEW_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 9);
+INSERT INTO VIEW_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 11);
+INSERT INTO VIEW_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 13);
+INSERT INTO VIEW_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 14);
+INSERT INTO VIEW_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 15);
+INSERT INTO VIEW_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 16);
+INSERT INTO VIEW_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 17);
+INSERT INTO VIEW_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 18);
+INSERT INTO VIEW_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 19);
+INSERT INTO VIEW_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 20);
+INSERT INTO VIEW_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 21);
+INSERT INTO VIEW_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 22);
+INSERT INTO VIEW_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 23);
+INSERT INTO VIEW_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 24);
+INSERT INTO VIEW_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 25);
+INSERT INTO VIEW_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 26);
+INSERT INTO VIEW_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 27);
+INSERT INTO VIEW_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 28);
+INSERT INTO VIEW_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 29);
+INSERT INTO VIEW_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 30);
+INSERT INTO VIEW_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 31);
+INSERT INTO VIEW_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 32);
+INSERT INTO VIEW_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 33);
+INSERT INTO VIEW_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 34);
+INSERT INTO VIEW_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 35);
+INSERT INTO VIEW_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 36);
+INSERT INTO VIEW_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 6);
+INSERT INTO VIEW_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 7);
+INSERT INTO VIEW_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 30);
+INSERT INTO VIEW_ILLUSTRATION_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 31);
+
+
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 4, 1);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 2);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 6, 2);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 5, 2);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 2);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 7, 3);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 4);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 5);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 6);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 7);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 8);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 9);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 5, 11);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 13);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 14);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 4, 15);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 4, 16);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 4, 17);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 18);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 18);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 5, 18);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 7, 18);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 6, 18);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 7, 19);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 6, 19);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 19);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 5, 19);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 20);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 20);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 5, 20);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 6, 20);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 21);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 21);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 5, 21);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 6, 21);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 22);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 22);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 5, 22);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 6, 22);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 23);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 23);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 5, 23);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 6, 23);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 24);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 24);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 5, 24);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 6, 24);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 4, 25);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 4, 26);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 4, 27);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 28);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 29);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 30);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 31);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 32);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 33);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 34);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 35);
+INSERT INTO TAG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 36);
+
+
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 1);
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 6, 1);  
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 2);
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 3);
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 4, 4);
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 4, 5);
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 4, 6);
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 4, 7);
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 4, 8);
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 4, 9);
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 10);
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 11);
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 12);
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 13);
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 13);
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 5, 14);
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 14);
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 15);
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 6, 15);
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 16);
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 6, 16);
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 17);
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 6, 17);
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 18);
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 19);
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 20);
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 21);
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 22);
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 23);
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 24);
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 25);
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 6, 25);
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 26);
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 6, 26);
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 27);
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 6, 27);
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 4, 28);
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 4, 29);
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 4, 30);
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 4, 31);
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 4, 32);
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 4, 33);
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 34);
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 34);
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 35);
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 35);
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 36);
+INSERT INTO GENRE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 36);
+
+
+INSERT INTO PUBLISHING_HOUSE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 1);
+INSERT INTO PUBLISHING_HOUSE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 2);
+INSERT INTO PUBLISHING_HOUSE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 3);
+INSERT INTO PUBLISHING_HOUSE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 4);
+INSERT INTO PUBLISHING_HOUSE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 5);
+INSERT INTO PUBLISHING_HOUSE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 6);
+INSERT INTO PUBLISHING_HOUSE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 7);
+INSERT INTO PUBLISHING_HOUSE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 8);
+INSERT INTO PUBLISHING_HOUSE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 9);
+INSERT INTO PUBLISHING_HOUSE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 5, 10);
+INSERT INTO PUBLISHING_HOUSE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 11);
+INSERT INTO PUBLISHING_HOUSE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 6, 12);
+INSERT INTO PUBLISHING_HOUSE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 5, 13);
+INSERT INTO PUBLISHING_HOUSE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 14);
+INSERT INTO PUBLISHING_HOUSE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 15);
+INSERT INTO PUBLISHING_HOUSE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 16);
+INSERT INTO PUBLISHING_HOUSE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 17);
+INSERT INTO PUBLISHING_HOUSE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 5, 18);
+INSERT INTO PUBLISHING_HOUSE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 4, 19);
+INSERT INTO PUBLISHING_HOUSE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 20);
+INSERT INTO PUBLISHING_HOUSE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 21);
+INSERT INTO PUBLISHING_HOUSE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 22);
+INSERT INTO PUBLISHING_HOUSE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 4, 23);
+INSERT INTO PUBLISHING_HOUSE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 5, 24);
+INSERT INTO PUBLISHING_HOUSE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 25);
+INSERT INTO PUBLISHING_HOUSE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 26);
+INSERT INTO PUBLISHING_HOUSE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 27);
+INSERT INTO PUBLISHING_HOUSE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 28);
+INSERT INTO PUBLISHING_HOUSE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 29);
+INSERT INTO PUBLISHING_HOUSE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 30);
+INSERT INTO PUBLISHING_HOUSE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 31);
+INSERT INTO PUBLISHING_HOUSE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 32);
+INSERT INTO PUBLISHING_HOUSE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 33);
+INSERT INTO PUBLISHING_HOUSE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 4, 34);
+INSERT INTO PUBLISHING_HOUSE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 4, 35);
+INSERT INTO PUBLISHING_HOUSE_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 4, 36);
+
+
+INSERT INTO READER_RATING_PRINTED_MATERIAL
+VALUES (1, 2, 6, 'Не понимаю этих страданий');
+INSERT INTO READER_RATING_PRINTED_MATERIAL
+VALUES (2, 4, 1, 'Внучке понравилась книга');
+INSERT INTO READER_RATING_PRINTED_MATERIAL
+VALUES (3, 5, 2, NULL);
+INSERT INTO READER_RATING_PRINTED_MATERIAL
+VALUES (4, 5, 5, NULL);
+INSERT INTO READER_RATING_PRINTED_MATERIAL
+VALUES (5, 5, 6, NULL);
+INSERT INTO READER_RATING_PRINTED_MATERIAL
+VALUES (6, 1, 10, NULL);
+
+
+INSERT INTO READER_RATING_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 1);
+INSERT INTO READER_RATING_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 2);
+INSERT INTO READER_RATING_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 2);
+INSERT INTO READER_RATING_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 2);
+INSERT INTO READER_RATING_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 2);
+INSERT INTO READER_RATING_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 6, 4);
+INSERT INTO READER_RATING_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 6, 5);
+INSERT INTO READER_RATING_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 10);
+INSERT INTO READER_RATING_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 11);
+INSERT INTO READER_RATING_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 13);
+INSERT INTO READER_RATING_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 6, 14);
+INSERT INTO READER_RATING_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 15);
+INSERT INTO READER_RATING_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 16);
+INSERT INTO READER_RATING_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 4, 17);
+INSERT INTO READER_RATING_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 4, 17);
+INSERT INTO READER_RATING_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 4, 17);
+INSERT INTO READER_RATING_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 5, 18);
+INSERT INTO READER_RATING_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 5, 18);
+INSERT INTO READER_RATING_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 5, 18);
+INSERT INTO READER_RATING_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 25);
+INSERT INTO READER_RATING_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 26);
+INSERT INTO READER_RATING_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 27);
+INSERT INTO READER_RATING_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 34);
+INSERT INTO READER_RATING_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 35);
+INSERT INTO READER_RATING_PRINTED_MATERIAL_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 36);
+
+
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 1);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 2);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 3);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 4);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 4, 5);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 5, 6);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 6, 7);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 7, 8);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 8, 9);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 9, 10);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 10, 11);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 10, 12);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 10, 13);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 10, 14);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 10, 15);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 10, 16);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 10, 17);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 10, 18);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 10, 19);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 10, 20);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 10, 21);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 10, 22);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 11, 23);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 11, 24);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 11, 25);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 11, 26);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 27);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 28);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 29);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 30);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 31);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 32);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 33);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 34);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 35);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_RECEIPT_LOG_OBJECT_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 36);
+
+
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (1, 2, 1, TO_DATE ('01.06.2022 10:12:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('01.06.2022 10:17:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('06.06.2022', 'DD.MM.YYYY'), 1, NULL, NULL, TO_DATE ('06.06.2022', 'DD.MM.YYYY'),1);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (2, 11, 1, TO_DATE ('01.06.2022 10:13:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('01.06.2022 10:18:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('06.06.2022', 'DD.MM.YYYY'), 1, NULL, NULL, TO_DATE ('06.06.2022', 'DD.MM.YYYY'), 1);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (3, 10, 1, TO_DATE ('20.10.2023 10:13:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('20.10.2023 10:18:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('20.11.2023', 'DD.MM.YYYY'), 1, NULL, NULL, NULL, 1);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (4, 10, 2, TO_DATE ('20.10.2023 10:18:00', 'DD.MM.YYYY HH24:MI:SS'), NULL, NULL, NULL, 2, TO_DATE ('20.10.2023', 'DD.MM.YYYY'), NULL, 1);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (5, 12, 1, TO_DATE ('01.08.2022 10:13:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('01.08.2022 10:18:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('01.08.2022', 'DD.MM.YYYY'), 2, NULL, NULL, TO_DATE ('01.08.2022', 'DD.MM.YYYY'),4);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (6, 12, 1, TO_DATE ('02.08.2022 10:13:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('02.08.2022 10:18:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('02.08.2022', 'DD.MM.YYYY'), 2, NULL, NULL, TO_DATE ('02.08.2022', 'DD.MM.YYYY'),4);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (7, 12, 1, TO_DATE ('03.08.2022 10:13:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('03.08.2022 10:18:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('03.08.2022', 'DD.MM.YYYY'), 2, NULL, NULL, TO_DATE ('03.08.2022', 'DD.MM.YYYY'),5);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (8, 12, 1, TO_DATE ('04.08.2022 11:11:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('04.08.2022 11:15:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('04.08.2022', 'DD.MM.YYYY'), 2, NULL, NULL, TO_DATE ('04.08.2022', 'DD.MM.YYYY'),5);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (9, 10, 6, TO_DATE ('04.09.2022 10:11:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('04.09.2022 10:16:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('10.09.2022', 'DD.MM.YYYY'), 1, NULL, NULL, TO_DATE ('10.09.2022', 'DD.MM.YYYY'),3);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (10, 34, 6, TO_DATE ('04.09.2022 10:10:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('04.09.2022 10:15:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('10.09.2022', 'DD.MM.YYYY'), 1, NULL, NULL, TO_DATE ('10.09.2022', 'DD.MM.YYYY'),3);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (11, 17, 5, TO_DATE ('12.09.2022 10:10:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('12.09.2022 10:15:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('16.09.2022', 'DD.MM.YYYY'), 1, NULL, NULL, TO_DATE ('17.09.2022', 'DD.MM.YYYY'),1);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (12, 15, 5, TO_DATE ('12.09.2022 10:11:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('12.09.2022 10:16:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('16.09.2022', 'DD.MM.YYYY'), 1, NULL, NULL, TO_DATE ('17.09.2022', 'DD.MM.YYYY'),1);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (13, 10, 5, TO_DATE ('22.09.2022 10:11:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('22.09.2022 10:16:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('24.09.2022', 'DD.MM.YYYY'), 1, NULL, NULL, TO_DATE ('24.09.2022', 'DD.MM.YYYY'),1);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (14, 6, 5, TO_DATE ('10.09.2023 15:10:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('10.09.2023 15:16:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('10.09.2023', 'DD.MM.YYYY'), 2, NULL, NULL, TO_DATE ('10.09.2023', 'DD.MM.YYYY'),1);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (15, 6, 4, TO_DATE ('11.09.2023 18:10:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('11.09.2023 18:16:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('11.09.2023', 'DD.MM.YYYY'), 2, NULL, NULL, TO_DATE ('11.09.2023', 'DD.MM.YYYY'),5);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (16, 18, 6, TO_DATE ('05.10.2022 10:11:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('05.10.2022 10:16:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('10.10.2022', 'DD.MM.YYYY'), 1, NULL, NULL, TO_DATE ('10.10.2022', 'DD.MM.YYYY'),2);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (17, 11, 6, TO_DATE ('10.10.2022 10:11:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('10.10.2022 10:16:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('15.10.2022', 'DD.MM.YYYY'), 1, NULL, NULL, TO_DATE ('15.10.2022', 'DD.MM.YYYY'),2);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (18, 4, 10, TO_DATE ('10.10.2022 10:20:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('10.10.2022 10:25:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('15.10.2022', 'DD.MM.YYYY'), 1, NULL, NULL, TO_DATE ('15.10.2022', 'DD.MM.YYYY'),2);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (19, 4, 10, TO_DATE ('15.10.2022 10:30:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('15.10.2022 10:31:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('20.10.2022', 'DD.MM.YYYY'), 1, NULL, NULL, TO_DATE ('20.10.2022', 'DD.MM.YYYY'),1);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (20, 4, 10, TO_DATE ('20.10.2022 10:30:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('20.10.2022 10:31:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('30.10.2022', 'DD.MM.YYYY'), 1, NULL, NULL, TO_DATE ('30.10.2022', 'DD.MM.YYYY'),1);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (21, 5, 10, TO_DATE ('30.10.2022 10:30:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('30.10.2022 10:31:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('30.10.2022', 'DD.MM.YYYY'), 2, NULL, NULL, TO_DATE ('30.10.2022', 'DD.MM.YYYY'),1);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (22, 10, 10, TO_DATE ('30.10.2022 10:30:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('30.10.2022 10:31:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('30.10.2022', 'DD.MM.YYYY'), 2, NULL, NULL, TO_DATE ('30.10.2022', 'DD.MM.YYYY'),1);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (23, 14, 10, TO_DATE ('30.10.2022 11:30:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('30.10.2022 11:32:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('30.10.2022', 'DD.MM.YYYY'), 2, NULL, NULL, TO_DATE ('30.10.2022', 'DD.MM.YYYY'),1);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (24, 14, 10, TO_DATE ('31.10.2022 12:30:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('31.10.2022 12:32:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('31.10.2022', 'DD.MM.YYYY'), 2, NULL, NULL, TO_DATE ('31.10.2022', 'DD.MM.YYYY'),1);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (25, 17, 3, TO_DATE ('20.04.2023 10:30:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('20.04.2023 10:31:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('20.04.2023', 'DD.MM.YYYY'), 2, NULL, NULL, TO_DATE ('20.04.2023', 'DD.MM.YYYY'),1);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (26, 17, 3, TO_DATE ('21.04.2023 10:30:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('21.04.2023 10:31:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('21.04.2023', 'DD.MM.YYYY'), 2, NULL, NULL, TO_DATE ('21.04.2023', 'DD.MM.YYYY'),1);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (27, 17, 3, TO_DATE ('22.04.2023 10:30:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('22.04.2023 10:31:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('22.04.2023', 'DD.MM.YYYY'), 2, NULL, NULL, TO_DATE ('22.04.2023', 'DD.MM.YYYY'),1);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (28, 17, 3, TO_DATE ('24.04.2023 10:30:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('24.04.2023 10:31:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('24.04.2023', 'DD.MM.YYYY'), 2, NULL, NULL, TO_DATE ('24.04.2023', 'DD.MM.YYYY'),1);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (29, 17, 3, TO_DATE ('25.04.2023 10:30:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('25.04.2023 10:31:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('25.04.2023', 'DD.MM.YYYY'), 2, NULL, NULL, TO_DATE ('25.04.2023', 'DD.MM.YYYY'),1);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (30, 17, 3, TO_DATE ('26.04.2023 10:30:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('26.04.2023 10:31:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('26.04.2023', 'DD.MM.YYYY'), 2, NULL, NULL, TO_DATE ('26.04.2023', 'DD.MM.YYYY'),1);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (31, 17, 3, TO_DATE ('27.04.2023 10:30:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('27.04.2023 10:31:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('27.04.2023', 'DD.MM.YYYY'), 2, NULL, NULL, TO_DATE ('27.04.2023', 'DD.MM.YYYY'),1);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (32, 17, 3, TO_DATE ('28.04.2023 10:30:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('28.04.2023 10:31:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('28.04.2023', 'DD.MM.YYYY'), 2, NULL, NULL, TO_DATE ('28.04.2023', 'DD.MM.YYYY'),1);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (33, 17, 3, TO_DATE ('29.04.2023 10:30:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('29.04.2023 10:31:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('29.04.2023', 'DD.MM.YYYY'), 2, NULL, NULL, TO_DATE ('29.04.2023', 'DD.MM.YYYY'),1);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (34, 17, 3, TO_DATE ('06.05.2023 10:30:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('06.05.2023 10:31:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('06.05.2023', 'DD.MM.YYYY'), 2, NULL, NULL, TO_DATE ('06.05.2023', 'DD.MM.YYYY'),1);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (35, 17, 3, TO_DATE ('11.05.2023 10:30:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('11.05.2023 10:31:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('11.05.2023', 'DD.MM.YYYY'), 2, NULL, NULL, TO_DATE ('11.05.2023', 'DD.MM.YYYY'),3);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (36, 17, 3, TO_DATE ('12.05.2023 10:30:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('12.05.2023 10:31:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('12.05.2023', 'DD.MM.YYYY'), 2, NULL, NULL, TO_DATE ('12.05.2023', 'DD.MM.YYYY'),3);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (37, 17, 3, TO_DATE ('13.05.2023 10:30:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('13.05.2023 10:31:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('13.05.2023', 'DD.MM.YYYY'), 2, NULL, NULL, TO_DATE ('13.05.2023', 'DD.MM.YYYY'),1);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (38, 17, 3, TO_DATE ('15.05.2023 10:30:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('15.05.2023 10:31:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('15.05.2023', 'DD.MM.YYYY'), 2, NULL, NULL, TO_DATE ('15.05.2023', 'DD.MM.YYYY'),1);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (39, 6, 4, TO_DATE ('13.10.2023 17:30:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('13.10.2023 17:35:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('13.10.2023', 'DD.MM.YYYY'), 2, NULL, NULL, TO_DATE ('13.10.2023', 'DD.MM.YYYY'),4);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (40, 4, 4, TO_DATE ('13.10.2023 17:31:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('13.10.2023 17:35:30', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('13.10.2023', 'DD.MM.YYYY'), 2, NULL, NULL, TO_DATE ('13.10.2023', 'DD.MM.YYYY'),4);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (41, 3, 7, TO_DATE ('13.10.2023 17:30:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('13.10.2023 17:35:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('18.10.2023', 'DD.MM.YYYY'), 1, NULL, NULL, NULL,3);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (42, 4, 7, TO_DATE ('13.09.2023 16:31:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('13.09.2023 16:35:30', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('13.09.2023', 'DD.MM.YYYY'), 2, NULL, NULL, TO_DATE ('13.09.2023', 'DD.MM.YYYY'),1);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (43, 11, 7, TO_DATE ('14.09.2023 14:31:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('14.09.2023 14:35:30', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('14.09.2023', 'DD.MM.YYYY'), 2, NULL, NULL, TO_DATE ('14.09.2023', 'DD.MM.YYYY'),1);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (44, 36, 8, TO_DATE ('14.09.2023 14:37:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('14.09.2023 14:40:30', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('19.09.2023', 'DD.MM.YYYY'), 1, NULL, NULL, TO_DATE ('19.09.2023', 'DD.MM.YYYY'),4);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (45, 15, 8, TO_DATE ('19.09.2023 15:00:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('19.09.2023 15:04:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('25.09.2023', 'DD.MM.YYYY'), 1, NULL, NULL, TO_DATE ('25.09.2023', 'DD.MM.YYYY'),1);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (46, 12, 9, TO_DATE ('20.09.2023 16:00:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('20.09.2023 16:10:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('20.09.2023', 'DD.MM.YYYY'), 2, NULL, NULL, TO_DATE ('20.09.2023', 'DD.MM.YYYY'),1);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (47, 12, 9, TO_DATE ('23.09.2023 10:05:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('23.09.2023 10:10:00', 'DD.MM.YYYY HH24:MI:SS'), TO_DATE ('23.09.2023', 'DD.MM.YYYY'), 2, NULL, NULL, TO_DATE ('23.09.2023', 'DD.MM.YYYY'),3);
+
+
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 2);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 11);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 10);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 4, 10);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 5, 12);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 6, 12);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 7, 12);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 8, 12);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 9, 10);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 10, 34);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 11, 17);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 12, 15);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 13, 10);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 14, 6);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 15, 6);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 16, 18);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 17, 11);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 18, 4);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 19, 4);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 20, 4);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 21, 5);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 22, 10);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 23, 14);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 24, 14);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 25, 17);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 26, 17);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 27, 17);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 28, 17);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 29, 17);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 30, 17);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 31, 17);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 32, 17);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 33, 17);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 34, 17);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 35, 17);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 36, 17);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 37, 17);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 38, 17);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 39, 6);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 40, 4);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 41, 3);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 42, 4);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 43, 11);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 44, 36);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 45, 15);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 46, 12);
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 47, 12);
+
+
+INSERT INTO RESTRICTION_LOG
+VALUES (1, 1, TO_DATE ('17.09.2022', 'DD.MM.YYYY'), TO_DATE ('27.09.2022', 'DD.MM.YYYY'));
+INSERT INTO RESTRICTION_LOG
+VALUES (2, 1, TO_DATE ('17.09.2022', 'DD.MM.YYYY'), TO_DATE ('27.09.2022', 'DD.MM.YYYY'));
+INSERT INTO RESTRICTION_LOG
+VALUES (3, 2, TO_DATE ('31.10.2022', 'DD.MM.YYYY'), TO_DATE ('30.11.2022', 'DD.MM.YYYY'));
+INSERT INTO RESTRICTION_LOG
+VALUES (4, 2, TO_DATE ('18.10.2023', 'DD.MM.YYYY'), NULL);
+
+
+INSERT INTO VIOLATION_LOG
+VALUES (1, 5, 1, TO_DATE ('16.09.2022', 'DD.MM.YYYY'), TO_DATE ('17.09.2022', 'DD.MM.YYYY'));
+INSERT INTO VIOLATION_LOG
+VALUES (2, 5, 1, TO_DATE ('16.09.2022', 'DD.MM.YYYY'), TO_DATE ('17.09.2022', 'DD.MM.YYYY'));
+INSERT INTO VIOLATION_LOG
+VALUES (3, 10, 4, TO_DATE ('31.10.2022', 'DD.MM.YYYY'), TO_DATE ('31.10.2022', 'DD.MM.YYYY'));
+INSERT INTO VIOLATION_LOG
+VALUES (4, 7, 3, TO_DATE ('18.10.2023', 'DD.MM.YYYY'), NULL);
+
+
+INSERT INTO VIOLATION_LOG_RESTRICTION_LOG
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 1);
+INSERT INTO VIOLATION_LOG_RESTRICTION_LOG
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 2, 2);
+INSERT INTO VIOLATION_LOG_RESTRICTION_LOG
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 3, 3);
+INSERT INTO VIOLATION_LOG_RESTRICTION_LOG
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 4, 4);
+
+
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL_VIOLATION_LOG
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 11, 1);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL_VIOLATION_LOG
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 12, 2);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL_VIOLATION_LOG
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 24, 3);
+INSERT INTO ISSUE_AND_RETURN_LOG_PRINTED_MATERIAL_VIOLATION_LOG
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 41, 4);
+
+
+INSERT INTO DISPOSAL_LOG_PRINTED_MATERIAL 
+SELECT 1, 3, TO_DATE ('31.10.2023', 'DD.MM.YYYY'),T.ID, 7 
+FROM TYPE_OF_DISPOSAL_PRINTED_MATERIAL T
+WHERE T.VALUE = 'Утеря пользователем библиотеки';
+
+
+INSERT INTO REPOSITORY_PRINTED_MATERIAL_DISPOSAL_LOG_PRINTED_MATERIAL
+VALUES (SEQUENCE_TAB_PM.NEXTVAL, 1, 3);

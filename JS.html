@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title> DD2 </title>
+ </head>
+ <body>
+    <script>
+       `use strict`;
+
+       let itemsMarket = [];
+        
+       itemsMarket[0] = { 
+        id: 1,
+        name: 'Кеды',
+        description: 'Зеленая легкость',
+        price: 3200,
+        finalPrice: 2999,
+       };
+
+       itemsMarket[1] = { 
+        id: 2,
+        name: 'Кроссовки',
+        description: 'Красный огонь',
+        price: 8500,
+        finalPrice: 7999,
+       };
+
+       itemsMarket[2] = { 
+        id: 3,
+        name: 'Джинсы',
+        description: 'Полосатая джинса',
+        price: 10000,
+        finalPrice: 8599,
+       };
+
+       itemsMarket[3] = { 
+        id: 4,
+        name: 'Худи',
+        description: 'Отличное худи',
+        price: 5400,
+        finalPrice: 4899,
+       };
+
+       itemsMarket[4] = { 
+        id: 5,
+        name: 'Свитшот',
+        description: 'Стильный свитшот',
+        price: 4200,
+        finalPrice: 3399,
+       };
+
+       
+       class Catalogue {
+        constructor (items) {
+            this.items = items;
+            };
+
+            getItems() {
+                let itemsStr = '';
+                for (let i = 0; i < this.items.length; i++) {
+                    itemsStr += this.items[i].id + ' ' + this.items[i].name + 
+' ' + this.items[i].description + ' ' + this.items[i].price + ' ' + 
+this.items[i].finalPrice + '\n';
+                };
+                return itemsStr;
+            };    
+
+            getItemById(confirmId) {
+                return this.items.find(item => item.id == +confirmId);
+            };
+        };
+
+
+       class Favorites extends Catalogue {
+        constructor (items) {
+            super (items);
+        };
+
+        addItem(item) {
+            for (let i = 0; i < this.items.length; i++) {
+                if (this.items[i].id == item.id) {
+                return alert('Товар уже добавлен!');
+                };
+            };
+            this.items.push(item);
+        };
+
+        removeItem(idDel) {
+           for (let i = 0; i < this.items.length; i++) {
+            if (this.items[i].id == idDel) {
+                this.items.splice(i, 1);
+                break; 
+            };
+           };
+        };
+           
+        comfirmFavorites() {
+            let itemDelete = prompt(`Вы находитесь в Избранном.\n\n\
+${this.getItems()}\nВыберите товар для удаления`);
+            this.removeItem(itemDelete);
+       };
+       };
+
+
+       class Cart extends Favorites {
+        constructor (items) {
+            super (items);
+        };
+
+        addItem(item) {
+            this.items.push(item);
+        };
+
+        comfirmCart() {
+            let itemDelete = prompt(`Вы находитесь в Корзине.\n\
+${this.getItems()}\n${this.calcTotalSum()}\nВыберете товар для удаления`);
+            this.removeItem(itemDelete);
+        };
+
+        calcTotalSum() {
+            let totalStr = '';
+            let priceSum = 0;
+            let finalPriceSum = 0;
+            for (let i = 0; i < this.items.length; i++) {
+                priceSum += this.items[i].price;
+                finalPriceSum += this.items[i].finalPrice;
+            };
+                let discount = priceSum - finalPriceSum;
+            totalStr = `Цена без скидки ${priceSum}\nЦена со скидкой \
+${finalPriceSum}\nВаша скидка составила ${discount}`; 
+                return totalStr;
+        };
+       };
+
+       let catalogue1 = new Catalogue (itemsMarket);
+       let favorites1 = new Favorites ([]);
+       let cart1 = new Cart ([]);
+
+       // тестовый пример
+       /*
+       let catalogue1 = new Catalogue (itemsMarket);
+       let favorites1 = new Favorites ([itemsMarket[0], itemsMarket[1]]);
+       let cart1 = new Cart ([itemsMarket[0], itemsMarket[2], itemsMarket[3]]);
+       */
+
+       while (true) {
+        let menu = prompt('Выберете действие: \n        1 - Каталог\n        \
+2 - Избранное\n        3 - Корзина');
+        if (menu == '1') {
+            let confirmCatalogue = prompt(`Вы находитесь в Каталоге.\n\n\
+${catalogue1.getItems()}\n Выберите товар для добавления в Избранное (1) или \
+Корзину (2)`, `номер товара через пробел 1 или 2`);
+
+            if (confirmCatalogue == null) {
+               continue;
+            } else {
+                let confirmId = confirmCatalogue.split(" ");
+            if (confirmId[1] == '1') {
+                favorites1.addItem(catalogue1.getItemById(+confirmId[0]));
+                favorites1.comfirmFavorites();
+            } ;
+            if (confirmId[1]== '2') {
+                cart1.addItem(catalogue1.getItemById(+confirmId[0]));
+                cart1.comfirmCart();
+            };
+        };
+    };
+        if (menu == '2') favorites1.comfirmFavorites();
+        if (menu == '3') cart1.comfirmCart();
+    };
+
+    </script>
+ </body>
+</html>
